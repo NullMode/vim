@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Get firectory of script
+# Get directory of script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Color variables
@@ -26,6 +26,3 @@ cat $DIR/rsync-exclude.txt
 echo -e "$DING"'Mirror completed. You may now delete this directory if required'
 echo -e "$DING"'cd .. && rm '$(pwd)
 echo -e "$DING"'You may leave the install.sh file here if you wish to re-sync in future.'
-
-exit 0
-
