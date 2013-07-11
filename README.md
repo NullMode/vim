@@ -2,16 +2,16 @@
 
 ## About
 This compilation was simply made so I can quickly git clone my personal
-vim settings onto newly install machines.
+vim settings onto newly installed machines.
 
 ## Installation Instructions
-`git clone https://github.com/NullMode/vim.git`
 
-* This folder needs to be placed in the .vim directory in the users home.
-* The install.sh file will sync the contends of the cloned folder to the users $HOME directory.
+* Navigate to a suitable download folder and run
+`git clone https://github.com/NullMode/vim.git`
+* The install.sh file will sync the contents of the cloned project to the user's $HOME directory.
 * General configuration is kept in the .vimrc file
 
-## List of installed addons/plugins
+## List of installed plugins and color schemes
 * Pathogen - https://github.com/tpope/vim-pathogen
     + Configuration in .vimrc
 * NERDTree - https://github.com/scrooloose/nerdtree
@@ -22,4 +22,4 @@ vim settings onto newly install machines.
 ## Thanks
 * lnxg33k for some great tips and a lot of stolen content from his vimrc
 file :P
-* g0tmi1k for actually motivating me to make this
+* g0tmi1k for actually motivating me to make this, no automation this time :)
