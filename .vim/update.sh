@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Get current directory
+# Get current directory if called from elsewhere
 ORIGINAL_DIR=$(pwd)
 
 # Get directory of script
@@ -13,8 +13,8 @@ YE="\033[0m"
 # Ding
 DING="$YS""[*] ""$YE"
 
-echo -e "$DING"'This script will update the installed plugins and color schemes.'
-echo -e "$DING"'Run this from the .vim/ folder to avoid errors.'
+# Warning
+echo -e "$DING"'WARNING - This script will update the installed plugins and color schemes.'
 echo -e "$SING""Type 'y' to continue."
 read IN
 
@@ -26,15 +26,18 @@ fi
 cd $DIR
 
 # Update NERDTree
-echo -e "$DING"'Updating NERD Tree ...'
+echo -e "$DING"'Updating Pathogen ...'
 rm autoload/pathogen.vim
 curl -s -S -o autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 # Update Pathogen
-echo -e "$DING"'Updating Pathogen ...'
+echo -e "$DING"'Updating NERDTree  ...'
 rm -rf bundle/nerdtree/
 cd bundle
 git clone https://github.com/scrooloose/nerdtree.git
+rm -rf nerdtree/.git
+rm nerdtree/.gitignore
+rm nerdtree/README.markdown
 cd ..
 
 # Update vividchalk color scheme
