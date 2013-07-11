@@ -11,6 +11,10 @@ vim settings onto newly installed machines.
 * The install.sh file will sync the contents of the cloned project to the user's $HOME directory.
 * General configuration is kept in the .vimrc file
 
+## Updating plugins
+In the .vim/ folder there is an update.sh file that will update the plugins and
+color schemes in use (listed below)
+
 ## List of installed plugins and color schemes
 * Pathogen - https://github.com/tpope/vim-pathogen
     + Configuration in .vimrc
