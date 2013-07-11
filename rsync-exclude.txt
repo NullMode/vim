@@ -1,0 +1,6 @@
+*.swp
+.git/
+install.sh
+README.md
+rsync-exclude.txt
+TODO.txt
