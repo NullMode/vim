@@ -14,9 +14,25 @@ DING="$YS""[*] ""$YE"
 if [ -z $(which vim) ] ; then
     echo -e "$DING"'install vim first before running this script!'
     echo -e "$DING"'apt-get install vim'
-    echo -e "$DING"'yum install vim'
     exit 1
 fi
+
+# Check if git is installed
+if [ -z $(which git) ] ; then
+    echo -e "$DING"'install git first before running this script!'
+    echo -e "$DING"'apt-get install git'
+    exit 1
+fi
+
+# Check if pip is installed
+if [ -z $(which pip) ] ; then
+    echo -e "$DING"'install pip first before running this script!'
+    echo -e "$DING"'apt-get install python-pip'
+    exit 1
+fi
+
+# Installing flake8
+pip install flake8
 
 # Mirror git clone to folder
 echo -e "$DING"'Mirroring vim configuration from '"$DIR"' to '"$HOME"'/ ...'

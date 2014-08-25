@@ -25,25 +25,34 @@ fi
 # Change directory
 cd $DIR
 
-# Update NERDTree
+# Update Pathogen
 echo -e "$DING"'Updating Pathogen ...'
 rm autoload/pathogen.vim
-curl -s -S -o autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+curl -s -S -o autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-# Update Pathogen
-echo -e "$DING"'Updating NERDTree  ...'
-rm -rf bundle/nerdtree/
 cd bundle
+
+# Update NERDTree
+echo -e "$DING"'Updating NERDTree  ...'
+rm -rf nerdtree/
 git clone https://github.com/scrooloose/nerdtree.git
 rm -rf nerdtree/.git
 rm nerdtree/.gitignore
 rm nerdtree/README.markdown
+rm -rf bundle/nerdtree/
+
+# Update vim-flake8
+echo -e "$DING"'Updating flake8 ...'
+rm -rf vim-flake8/
+git clone https://github.com/nvie/vim-flake8.git
+rm -rf vim-flake8/.git
+rm vim-flake8/README.mdown
 cd ..
 
 # Update vividchalk color scheme
 echo -e "$DING"'Updating VividChalk Color Scheme ...'
 rm colors/vividchalk.vim
-curl -s -S -o colors/vividchalk.vim https://raw.github.com/tpope/vim-vividchalk/master/colors/vividchalk.vim
+curl -s -S -o colors/vividchalk.vim https://raw.githubusercontent.com/tpope/vim-vividchalk/master/colors/vividchalk.vim 
 
 # Return back
 cd $ORIGINAL_DIR

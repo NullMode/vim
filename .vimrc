@@ -21,6 +21,7 @@ endif
 " START CUSTOM CONFIG
 
 " Custom status line
+set laststatus=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 
 
@@ -134,12 +135,32 @@ set wildmode=list:longest,full
 
 
 " Showing line numbers and length
-set number  " show line numbers
+" set number  " show line numbers - disabled for relative line numbers
 set tw=79   " width of document (used by gd)
 set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
 " set colorcolumn=80
 " highlight ColorColumn ctermbg=233
+
+" Setup relative line numbers and a toggle
+set relativenumber
+function! NumberToggle()
+    if(&relativenumber == 1)
+        set number
+    else
+        set relativenumber
+    endif
+endfunc
+
+" Toggle into number when insert mode selected
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+
+" On focused lost switch to number 
+:au FocusLost * :set number
+:au FocusGained * :set relativenumber
+
+nnoremap <C-m> :call NumberToggle()<cr>
 
 
 " easier formatting of paragraphs

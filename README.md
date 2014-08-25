@@ -4,8 +4,12 @@
 This compilation was simply made so I can quickly git clone my personal
 vim settings onto newly installed machines.
 
-## Installation Instructions
+## Requirements
+* git
+* pip
+* vim
 
+## Installation Instructions
 * Navigate to a suitable download folder and run
 `git clone https://github.com/NullMode/vim.git`
 * The install.sh file will sync the contents of the cloned project to the user's $HOME directory.
@@ -21,6 +25,8 @@ color schemes in use (listed below)
 * NERDTree - https://github.com/scrooloose/nerdtree
     + Configuration in .vimrc
 * Vividchalk Color Scheme - https://github.com/tpope/vim-vividchalk
+    + Configuration in .vimrc
++ Vim Flake8 - https://github.com/nvie/vim-flake8
     + Configuration in .vimrc
 
 ## Thanks
