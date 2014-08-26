@@ -47,6 +47,17 @@ rm -rf vim-flake8/
 git clone https://github.com/nvie/vim-flake8.git
 rm -rf vim-flake8/.git
 rm vim-flake8/README.mdown
+
+# Update vim-git
+echo -e "$DING"'Updating vim-git ...'
+rm -rf vim-git
+git clone https://github.com/tpope/vim-git
+
+# Update fugitive
+echo -e "$DING"'Updating fugitive ...'
+rm -rf vim-fugitive
+git clone https://github.com/tpope/vim-fugitive
+
 cd ..
 
 # Update vividchalk color scheme
