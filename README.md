@@ -28,8 +28,8 @@ color schemes in use (listed below)
     + Configuration in .vimrc
 + Vim Flake8 - https://github.com/nvie/vim-flake8
     + Configuration in .vimrc
-+ Vim Git - https://github.com/tpope/vim-fugitive
-+ Vim Fugitive - https://github.com/tpope/vim-git.git
++ Vim Git - https://github.com/tpope/vim-git
++ Vim Fugitive - https://github.com/tpope/vim-fugitive
 
 ## Thanks
 * lnxg33k for some great tips and a lot of stolen content from his vimrc
