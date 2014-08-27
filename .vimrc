@@ -1,4 +1,4 @@
-" START DEFAULT CONFIGURATION
+" STAR, DEFAULT CONFIGURATION
 " Remove comments
 " Default configuration can usualy be found at /etc/vim/vimrc
 
@@ -209,7 +209,7 @@ execute pathogen#infect()
 autocmd vimenter * if !argc() | NERDTree | endif
 
 " Map ctrl N to open NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <leader>. :NERDTreeToggle<CR>
 
 " Close vim if only NERDTree is left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
