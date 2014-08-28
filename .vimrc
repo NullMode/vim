@@ -29,7 +29,7 @@ set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 set mouse=
 
 
-" Opening a new file when the current buffer has unsaved changes causes files 
+" Opening a new file when the current buffer has unsaved changes causes files
 " to be hidden instead of closed
 set hidden
 
@@ -66,7 +66,7 @@ set clipboard=unnamed
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
 let mapleader = ","
 
- 
+
 " Bind nohl
 " Removes highlight of your last search
 " ``<C>`` stands for ``CTRL`` and therefore ``<C-n>`` stands for ``CTRL+n``
@@ -112,13 +112,13 @@ vnoremap > >gv  " better indentation
 
 " Show whitespace
 " MUST be inserted BEFORE the colorscheme command
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red   
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
 
 " Color scheme
 set t_Co=256
-colorscheme vividchalk 
+colorscheme vividchalk
 
 
 " Enable syntax highlighting
@@ -146,17 +146,19 @@ set fo-=t   " don't automatically wrap text when typing
 set relativenumber
 function! NumberToggle()
     if(&relativenumber == 1)
+        set norelativenumber
         set number
     else
+        set nonumber
         set relativenumber
     endif
 endfunc
 
 " Toggle into number when insert mode selected
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
+autocmd InsertEnter * :set norelativenumber | set number
+autocmd InsertLeave * :set nonumber | set relativenumber
 
-" On focused lost switch to number 
+" On focused lost switch to number
 :au FocusLost * :set number
 :au FocusGained * :set relativenumber
 
