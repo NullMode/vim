@@ -6,6 +6,9 @@
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
+" Bar marking 80 chars
+autocmd ColorScheme * highlight ColorColumn ctermbg=Red
+set colorcolumn=81
 
 " If syntax is available for file, use it
 if has("syntax")
