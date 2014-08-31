@@ -25,12 +25,20 @@ fi
 # Change directory
 cd $DIR
 
+
 # Update Pathogen
 echo -e "$DING"'Updating Pathogen ...'
 rm autoload/pathogen.vim
 curl -s -S -o autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 cd bundle
+
+# Update indentline
+echo -e "$DING"'Updating indentLine ...'
+rm -rf indentLine/
+git clone https://github.com/Yggdroot/indentLine.git
+rm -rf indentLine/.git
+rm indentLine/.gitignore
 
 # Update NERDTree
 echo -e "$DING"'Updating NERDTree  ...'
