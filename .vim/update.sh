@@ -25,7 +25,6 @@ fi
 # Change directory
 cd $DIR
 
-
 # Update Pathogen
 echo -e "$DING"'Updating Pathogen ...'
 rm autoload/pathogen.vim
