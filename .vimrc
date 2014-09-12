@@ -7,7 +7,6 @@
 runtime! debian.vim
 
 " Bar marking 80 chars
-autocmd ColorScheme * highlight ColorColumn ctermbg=Red
 set colorcolumn=81
 
 " If syntax is available for file, use it
