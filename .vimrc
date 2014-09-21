@@ -6,12 +6,10 @@
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
-
 " If syntax is available for file, use it
 if has("syntax")
   syntax on
 endif
-
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -235,3 +233,5 @@ autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=None
 " Revert Color to default when leaving Insert Mode
 autocmd InsertLeave * highlight  CursorLine ctermbg=lightgrey ctermfg=white
 
+" Rebind esc to jj, srsly awesome
+:map! jj <ESC>
