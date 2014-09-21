@@ -4,7 +4,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Color variables
-YS="\e[33m"
+YS="\E[33m;42"
 YE="\033[0m"
 
 # Ding

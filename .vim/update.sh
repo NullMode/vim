@@ -75,10 +75,12 @@ git clone https://github.com/bling/vim-airline
 
 cd ..
 
-# Update vividchalk color scheme
-echo -e "$DING"'Updating VividChalk Color Scheme ...'
+# Update color schemes
+echo -e "$DING"'Updating VividChalk & Moloka Color Schemes ...'
 rm colors/vividchalk.vim
-curl -s -S -o colors/vividchalk.vim https://raw.githubusercontent.com/tpope/vim-vividchalk/master/colors/vividchalk.vim 
+rm colors/molokai.vim
+curl -s -S -o colors/vividchalk.vim https://raw.githubusercontent.com/tpope/vim-vividchalk/master/colors/vividchalk.vim
+curl -s -S -o colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
 # Return back
 cd $ORIGINAL_DIR

@@ -116,9 +116,10 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
 
-" Color scheme
+" Color scheme - Leave your desired colorscheme uncommented :)
 set t_Co=256
 colorscheme vividchalk
+colorscheme molokai
 
 
 " Enable syntax highlighting
