@@ -24,6 +24,8 @@ color schemes in use (listed below)
     + Configuration in .vimrc
 * NERDTree - https://github.com/scrooloose/nerdtree
     + Configuration in .vimrc
+* Molokai Color Scheme - https://github.com/tomasr/molokai
+    + Configuration in .vimrc
 * Vividchalk Color Scheme - https://github.com/tpope/vim-vividchalk
     + Configuration in .vimrc
 + Vim Flake8 - https://github.com/nvie/vim-flake8
@@ -38,3 +40,4 @@ color schemes in use (listed below)
 * lnxg33k for some great tips and a lot of stolen content from his vimrc
 file :P
 * g0tmi1k for actually motivating me to make this, no automation this time :)
+* TheColonial for showing me a color scheme that might make my eyes last longer
