@@ -223,6 +223,15 @@ let NERDTreeShowHidden=1
 " Remove strange symbols
 let g:NERDTreeDirArrows=0
 
-" Cursor line pimpage
-hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkgrey
-set cursorline
+" Enable CursorLine
+ set cursorline
+
+" Default Colors for CursorLine
+highlight  CursorLine ctermbg=darkgrey ctermfg=white
+
+" Change Color when entering Insert Mode
+autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=None
+
+" Revert Color to default when leaving Insert Mode
+autocmd InsertLeave * highlight  CursorLine ctermbg=lightgrey ctermfg=white
+
