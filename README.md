@@ -30,6 +30,9 @@ color schemes in use (listed below)
     + Configuration in .vimrc
 + Vim Git - https://github.com/tpope/vim-git
 + Vim Fugitive - https://github.com/tpope/vim-fugitive
++ Vim Bufferline - https://github.com/bling/vim-bufferline
++ Vim Gitgutter - https://github.com/airblade/vim-gitgutter
++ Vim Airline - https://github.com/bling/vim-airline
 
 ## Thanks
 * lnxg33k for some great tips and a lot of stolen content from his vimrc

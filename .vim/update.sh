@@ -58,6 +58,21 @@ echo -e "$DING"'Updating fugitive ...'
 rm -rf vim-fugitive
 git clone https://github.com/tpope/vim-fugitive
 
+# Update gitgutter
+echo -e "$DING"'Updating gitgutter ...'
+rm -rf vim-gitgutter
+git clone https://github.com/airblade/vim-gitgutter
+
+# Update bufferline
+echo -e "$DING"'Updating bufferline ...'
+rm -rf vim-bufferline
+git clone https://github.com/bling/vim-bufferline
+
+# Update airline
+echo -e "$DING"'Updating airline ...'
+rm -rf vim-airline
+git clone https://github.com/bling/vim-airline
+
 cd ..
 
 # Update vividchalk color scheme

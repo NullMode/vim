@@ -221,3 +221,7 @@ let NERDTreeShowHidden=1
 
 " Remove strange symbols
 let g:NERDTreeDirArrows=0
+
+" Cursor line pimpage
+hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkgrey
+set cursorline
