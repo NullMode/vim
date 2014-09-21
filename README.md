@@ -12,6 +12,9 @@ vim settings onto newly installed machines.
 ## Installation Instructions
 * Navigate to a suitable download folder and run
 `git clone https://github.com/NullMode/vim.git`
+* If you are not installing this on root you may need to install flake8
+  manually
+`pip install flake8`
 * The install.sh file will sync the contents of the cloned project to the user's $HOME directory.
 * General configuration is kept in the .vimrc file
 
