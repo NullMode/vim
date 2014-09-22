@@ -72,12 +72,29 @@ echo -e "$DING"'Updating fugitive ...'
 rm -rf vim-fugitive
 git clone https://github.com/tpope/vim-fugitive
 
+# Update gitgutter
+echo -e "$DING"'Updating gitgutter ...'
+rm -rf vim-gitgutter
+git clone https://github.com/airblade/vim-gitgutter
+
+# Update bufferline
+echo -e "$DING"'Updating bufferline ...'
+rm -rf vim-bufferline
+git clone https://github.com/bling/vim-bufferline
+
+# Update airline
+echo -e "$DING"'Updating airline ...'
+rm -rf vim-airline
+git clone https://github.com/bling/vim-airline
+
 cd ..
 
-# Update vividchalk color scheme
-echo -e "$DING"'Updating VividChalk Color Scheme ...'
+# Update color schemes
+echo -e "$DING"'Updating VividChalk & Moloka Color Schemes ...'
 rm colors/vividchalk.vim
-curl -s -S -o colors/vividchalk.vim https://raw.githubusercontent.com/tpope/vim-vividchalk/master/colors/vividchalk.vim 
+rm colors/molokai.vim
+curl -s -S -o colors/vividchalk.vim https://raw.githubusercontent.com/tpope/vim-vividchalk/master/colors/vividchalk.vim
+curl -s -S -o colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
 # Return back
 cd $ORIGINAL_DIR

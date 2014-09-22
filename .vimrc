@@ -14,7 +14,6 @@ if has("syntax")
   syntax on
 endif
 
-
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
@@ -118,9 +117,10 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
 
-" Color scheme
+" Color scheme - Leave your desired colorscheme uncommented :)
 set t_Co=256
 colorscheme vividchalk
+colorscheme molokai
 
 
 " Enable syntax highlighting
@@ -223,3 +223,18 @@ let NERDTreeShowHidden=1
 
 " Remove strange symbols
 let g:NERDTreeDirArrows=0
+
+" Enable CursorLine
+ set cursorline
+
+" Default Colors for CursorLine
+highlight  CursorLine ctermbg=darkgrey ctermfg=white
+
+" Change Color when entering Insert Mode
+autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=None
+
+" Revert Color to default when leaving Insert Mode
+autocmd InsertLeave * highlight  CursorLine ctermbg=lightgrey ctermfg=white
+
+" Rebind esc to jj, srsly awesome
+:map! jj <ESC>
