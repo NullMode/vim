@@ -119,7 +119,7 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Color scheme - Leave your desired colorscheme uncommented :)
 set t_Co=256
-colorscheme vividchalk
+"colorscheme vividchalk
 colorscheme molokai
 
 

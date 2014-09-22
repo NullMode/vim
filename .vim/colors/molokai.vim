@@ -136,11 +136,11 @@ end
 "
 if &t_Co > 255
    if s:molokai_original == 1
-      hi Normal                   ctermbg=234
+      hi Normal                   ctermbg=black
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    else
-      hi Normal       ctermfg=252 ctermbg=233
+      hi Normal       ctermfg=252 ctermbg=black
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    endif
@@ -227,13 +227,14 @@ if &t_Co > 255
    hi Comment         ctermfg=59
    hi CursorColumn                ctermbg=236
    hi ColorColumn                 ctermbg=236
-   hi LineNr          ctermfg=250 ctermbg=236
+   hi LineNr          ctermfg=250 ctermbg=black
    hi NonText         ctermfg=59
 
    hi SpecialKey      ctermfg=59
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
+       "243
        hi CursorLine               ctermbg=236   cterm=none
        hi CursorLineNr ctermfg=208               cterm=none
 
