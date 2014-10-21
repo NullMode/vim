@@ -228,13 +228,13 @@ let g:NERDTreeDirArrows=0
  set cursorline
 
 " Default Colors for CursorLine
-highlight  CursorLine ctermbg=darkgrey ctermfg=white
+highlight  CursorLine ctermbg=grey ctermfg=white
 
 " Change Color when entering Insert Mode
 autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=None
 
 " Revert Color to default when leaving Insert Mode
-autocmd InsertLeave * highlight  CursorLine ctermbg=lightgrey ctermfg=white
+autocmd InsertLeave * highlight  CursorLine ctermbg=grey ctermfg=white
 
 " Rebind esc to jj, srsly awesome
 :map! jj <ESC>
