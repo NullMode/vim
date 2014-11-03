@@ -224,17 +224,17 @@ let NERDTreeShowHidden=1
 " Remove strange symbols
 let g:NERDTreeDirArrows=0
 
-" Enable CursorLine
- set cursorline
+" Disable CursorLine by default
+set nocursorline
 
 " Default Colors for CursorLine
-highlight  CursorLine ctermbg=grey ctermfg=white
+highlight  CursorLine ctermbg=DarkGrey ctermfg=white
 
 " Change Color when entering Insert Mode
 autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=None
 
 " Revert Color to default when leaving Insert Mode
-autocmd InsertLeave * highlight  CursorLine ctermbg=grey ctermfg=white
+autocmd InsertLeave * highlight  CursorLine ctermbg=DarkGrey ctermfg=white
 
 " Rebind esc to jj, srsly awesome
 :map! jj <ESC>
