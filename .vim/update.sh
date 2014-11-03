@@ -32,6 +32,20 @@ curl -s -S -o autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-
 
 cd bundle
 
+# Update airline
+echo -e "$DING"'Updating airline ...'
+rm -rf vim-airline/
+git clone https://github.com/bling/vim-airline.git
+rm -rf vim-airline/.git
+rm -rf vim-airline/.gitignore
+
+# Update indentline
+echo -e "$DING"'Updating indentLine ...'
+rm -rf indentLine/
+git clone https://github.com/Yggdroot/indentLine.git
+rm -rf indentLine/.git
+rm indentLine/.gitignore
+
 # Update NERDTree
 echo -e "$DING"'Updating NERDTree  ...'
 rm -rf nerdtree/

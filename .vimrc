@@ -6,6 +6,9 @@
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
+" Bar marking 80 chars
+set colorcolumn=81
+
 " If syntax is available for file, use it
 if has("syntax")
   syntax on
@@ -116,7 +119,7 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Color scheme - Leave your desired colorscheme uncommented :)
 set t_Co=256
-colorscheme vividchalk
+"colorscheme vividchalk
 colorscheme molokai
 
 
@@ -225,13 +228,13 @@ let g:NERDTreeDirArrows=0
  set cursorline
 
 " Default Colors for CursorLine
-highlight  CursorLine ctermbg=darkgrey ctermfg=white
+highlight  CursorLine ctermbg=grey ctermfg=white
 
 " Change Color when entering Insert Mode
 autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=None
 
 " Revert Color to default when leaving Insert Mode
-autocmd InsertLeave * highlight  CursorLine ctermbg=lightgrey ctermfg=white
+autocmd InsertLeave * highlight  CursorLine ctermbg=grey ctermfg=white
 
 " Rebind esc to jj, srsly awesome
 :map! jj <ESC>
