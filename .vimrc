@@ -7,7 +7,7 @@
 runtime! debian.vim
 
 " Bar marking 80 chars
-set colorcolumn=81
+set colorcolumn=80
 
 " If syntax is available for file, use it
 if has("syntax")
