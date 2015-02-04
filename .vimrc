@@ -101,6 +101,9 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " colorscheme molokai
 colorscheme flatcolor
 
+" Set the darker dark backgound
+let g:flatcolor_asphaltbg
+
 " Set background to dark
 set background=dark
 
