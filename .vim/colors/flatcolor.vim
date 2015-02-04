@@ -18,7 +18,7 @@ if ! exists("g:flatcolor_termcolors")
 endif
 
 if ! exists("g:flatcolor_asphaltbg")
-  let g:flatcolor_asphaltbg = 1
+  let g:flatcolor_asphaltbg = 0
 endif
 
 " not all terminals support italics properly.  If yours does, opt-in.
