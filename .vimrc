@@ -120,7 +120,8 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " Color scheme - Leave your desired colorscheme uncommented :)
 set t_Co=256
 "colorscheme vividchalk
-colorscheme molokai
+"colorscheme molokai
+colorscheme flatcolor
 
 
 " Enable syntax highlighting
@@ -223,6 +224,9 @@ let NERDTreeShowHidden=1
 
 " Remove strange symbols
 let g:NERDTreeDirArrows=0
+
+" Use current directory
+let g:NERDTreeChDirMode=2
 
 " Disable CursorLine by default
 set nocursorline
