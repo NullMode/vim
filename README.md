@@ -31,6 +31,8 @@ color schemes in use (listed below)
     + Configuration in .vimrc
 * Vividchalk Color Scheme - https://github.com/tpope/vim-vividchalk
     + Configuration in .vimrc
+* FlatColor Color Scheme - https://github.com/MaxSt/FlatColor
+    + Configuration in .vimrc
 + Vim Flake8 - https://github.com/nvie/vim-flake8
     + Configuration in .vimrc
 + Vim Git - https://github.com/tpope/vim-git
