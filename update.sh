@@ -28,7 +28,7 @@ rm .vim/autoload/pathogen.vim
 curl -s -S -o .vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 # Update color schemes
-echo "[*] Updating VividChalk & Moloka Color Schemes ..."
+echo "[*] Updating Color Schemes ..."
 rm -r .vim/colors/*.vim
 curl -s -S -o .vim/colors/vividchalk.vim https://raw.githubusercontent.com/tpope/vim-vividchalk/master/colors/vividchalk.vim
 curl -s -S -o .vim/colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
