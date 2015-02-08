@@ -20,7 +20,9 @@ fi
 echo "[*] Updating NullMode's config ..."
 git pull
 echo "[*] Updating git submodules (plugins) ..."
-git submodule init && git submodule update && git submodule status
+git submodule init 
+git submodule update --recursive
+git submodule status
 
 # Update Pathogen
 echo "[*] Updating Pathogen ..."
