@@ -35,6 +35,7 @@ The update.sh file will update the project, plugins and color schemes in use (li
 * Vim Gitgutter - https://github.com/airblade/vim-gitgutter
 * Vim Airline - https://github.com/bling/vim-airline
 * IndentLine - https://github.com/Yggdroot/indentLine
+* Vim Isort - https://github.com/fisadev/vim-isort
 
 ## List of color schemes
 * Molokai Color Scheme - https://github.com/tomasr/molokai

@@ -187,6 +187,9 @@ set noswapfile
 " Turn on...
 execute pathogen#infect()
 
+" Vim isort 
+Bundle 'fisadev/vim-isort'
+
 " NERDTree setup
 " Open NERDTree if no arguments where given
 autocmd vimenter * if !argc() | NERDTree | endif
