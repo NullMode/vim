@@ -231,3 +231,6 @@ function! Tab_Or_Complete()
 endfunction
 :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 " :set dictionary="/usr/dict/words"
+
+" for Isort, sort your python imports
+command! -range=% Isort :<line1>,<line2>! isort -
