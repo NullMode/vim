@@ -40,8 +40,18 @@ The update.sh file will update the project, plugins and color schemes in use (li
 * Vividchalk Color Scheme - https://github.com/tpope/vim-vividchalk
 * FlatColor Color Scheme - https://github.com/MaxSt/FlatColor
 
+## Fonts (Install manually)
++ http://www.google.com/fonts/specimen/Droid+Sans+Mono
+
 ## Thanks
 * lnxg33k for some great tips and a lot of stolen content from his vimrc
 file :P
 * g0tmi1k for actually motivating me to make this, no automation this time :)
 * TheColonial for showing me a color scheme that might make my eyes last longer
+
+# TODO
++ Remove NERDTRee - Don't use it anymore
++ Full test on windows, linux and OSX
++ Get terminal version working in windows
++ Go through .vimrc
++ Windows deployment script
