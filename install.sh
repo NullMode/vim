@@ -31,7 +31,7 @@ if [ -z $(which pip) ] ; then
     exit 1
 fi
 
-# Installing flake8
+# Installing flake8 and isort
 pip install flake8 isort
 
 # Mirror git clone to folder
