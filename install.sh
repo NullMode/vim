@@ -32,7 +32,7 @@ if [ -z $(which pip) ] ; then
 fi
 
 # Installing flake8
-pip install flake8
+pip install flake8 isort
 
 # Mirror git clone to folder
 echo -e "$DING"'Mirroring vim configuration from '"$DIR"' to '"$HOME"'/ ...'

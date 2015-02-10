@@ -234,3 +234,8 @@ endfunction
 
 " for Isort, sort your python imports
 command! -range=% Isort :<line1>,<line2>! isort -
+
+" Set font if in windows gvim
+if has("gui_win32")
+    set guifont=Droid_Sans_Mono:h12:cANSI
+endif
