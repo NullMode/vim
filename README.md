@@ -55,3 +55,5 @@ file :P
 + Get terminal version working in windows
 + Go through .vimrc
 + Windows deployment script
++ Update script section for Isort
++ Remove silly colors from install script
