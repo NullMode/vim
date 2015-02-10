@@ -8,19 +8,21 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 
 # Warning
-echo -e "[!] WARNING - This script will update the project, installed plugins and color schemes."
-echo -e "Type 'y' to continue."
-read IN
+if [[ "$1" != "--force" ]]; then
+    echo -e "[!] WARNING - This script will update the project, installed plugins and color schemes."
+    echo -e "Type 'y' to continue."
+    read IN
 
-if [ ! "$IN" = "y"  ]; then
-    exit 0
+    if [ ! "$IN" = "y"  ]; then
+        exit 0
+    fi
 fi
 
 # Update project and submodules
 echo "[*] Updating NullMode's config ..."
 git pull
 echo "[*] Updating git submodules (plugins) ..."
-git submodule init 
+git submodule init
 git submodule update --recursive
 git submodule status
 
