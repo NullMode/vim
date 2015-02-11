@@ -181,3 +181,6 @@ else
         so .my.vimrc
     endif
 endif
+
+" If in html, two spaces for tabs only
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
