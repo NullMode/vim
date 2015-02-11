@@ -50,7 +50,6 @@ file :P
 * TheColonial for showing me a color scheme that might make my eyes last longer
 
 # TODO
-+ Remove NERDTRee - Don't use it anymore
 + Full test on windows, linux and OSX
 + Get terminal version working in windows
 + Go through .vimrc
