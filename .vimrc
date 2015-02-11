@@ -187,25 +187,6 @@ set noswapfile
 " Turn on...
 execute pathogen#infect()
 
-" NERDTree setup
-" Open NERDTree if no arguments where given
-autocmd vimenter * if !argc() | NERDTree | endif
-
-" Map ctrl N to open NERDTree
-map <leader>. :NERDTreeToggle<CR>
-
-" Close vim if only NERDTree is left open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" Show hidden files
-let NERDTreeShowHidden=1
-
-" Remove strange symbols
-let g:NERDTreeDirArrows=0
-
-" Use current directory
-let g:NERDTreeChDirMode=2
-
 " Disable CursorLine by default
 set nocursorline
 
