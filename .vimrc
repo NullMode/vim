@@ -170,3 +170,14 @@ command! -range=% Isort :<line1>,<line2>! isort -
 if has("gui_win32")
     set guifont=Droid_Sans_Mono:h12:cANSI
 endif
+
+" Override file for overriding settings
+if has("win32")
+    if filereadable("_my_vim_rc")
+        so _my_vimrc
+    endif
+else
+    if filereadable(".my.vimrc")
+        so .my.vimrc
+    endif
+endif

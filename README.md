@@ -4,6 +4,11 @@
 This compilation was simply made so I can quickly git clone my personal
 vim settings onto newly installed machines.
 
+## Overriding
+Like some but not all of the config? You can override settings but creating a
+**.my.vimrc** in your user's home directory (_my_vimrc on Windows in the same
+folder as _vimrc). - NEEDS TESTING
+
 ## Requirements
 * git
 * pip
