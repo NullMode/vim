@@ -52,5 +52,4 @@ file :P
 # TODO
 + Full test on windows, linux and OSX
 + Get terminal version working in windows
-+ Go through .vimrc
 + Windows deployment script
