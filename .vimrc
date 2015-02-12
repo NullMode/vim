@@ -163,6 +163,9 @@ function! Tab_Or_Complete()
 endfunction
 :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
+" Load Isort
+source ~/.vim/bundle/vim-isort/ftplugin/python_vimisort.vim
+
 " for Isort, sort your python imports
 command! -range=% Isort :<line1>,<line2>! isort -
 
