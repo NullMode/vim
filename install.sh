@@ -7,6 +7,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [ -z $(which vim) ] ; then
     echo '[*] install vim first before running this script!'
     echo '[*] apt-get install vim'
+    echo '[*] If Isort gives you errors because of no python run the following:'
+    echo '[*] apt-get install vim-nox'
     exit 1
 fi
 
