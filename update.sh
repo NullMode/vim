@@ -26,9 +26,6 @@ git submodule init
 git submodule update --recursive
 git submodule status
 
-# Update vim-isort
-curl -s -S -o .vim/bundle/vim-isort/ https://raw.githubusercontent.com/fisadev/vim-isort/master/ftplugin/python_vimisort.vim
-
 # Update Pathogen
 echo "[*] Updating Pathogen ..."
 rm .vim/autoload/pathogen.vim
