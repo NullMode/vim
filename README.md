@@ -13,6 +13,7 @@ folder as _vimrc). - NEEDS TESTING
 * git
 * pip
 * vim
+* curl
 
 ## Installation Instructions
 * Navigate to a suitable download folder and run
