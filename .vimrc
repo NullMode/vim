@@ -187,3 +187,9 @@ endif
 
 " If in html, two spaces for tabs only
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
+" Fix typing derps
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
