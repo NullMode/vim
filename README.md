@@ -17,9 +17,9 @@ folder as _vimrc). - NEEDS TESTING
 ## Installation Instructions
 * Navigate to a suitable download folder and run
 `git clone https://github.com/NullMode/vim.git`
-* If you are not installing this as root you may need to install flake8
-  manually
-`pip install flake8`
+* If you are not installing this as root you may need to install flake8 and
+  isort manually
+`pip install flake8 isort`
 * Running update.sh will pull down the submodules code
 * The install.sh file will sync the contents of the cloned project to the user's $HOME directory.
 * General configuration is kept in the .vimrc file
