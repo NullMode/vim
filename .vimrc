@@ -72,11 +72,7 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 colorscheme flatcolor
 
 " Set the darker dark backgound
-<<<<<<< Updated upstream
 let g:flatcolor_asphaltbg=1
-=======
-let g:flatcolor_asphaltbg=0
->>>>>>> Stashed changes
 
 " Set background to dark
 set background=dark
