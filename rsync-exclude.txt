@@ -6,3 +6,5 @@ rsync-exclude.txt
 TODO.txt
 update.sh
 update.ps1
+.gitignore
+.gitmodules
