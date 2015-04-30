@@ -40,6 +40,7 @@ The update.sh file will update the project, plugins and color schemes in use (li
 * IndentLine - https://github.com/Yggdroot/indentLine
 * Vim Isort - https://github.com/fisadev/vim-isort
 * Ps1.vim - https://github.com/PProvost/vim-ps1
+* Vim Markdown - https://github.com/plasticboy/vim-markdown
 
 ## List of color schemes
 * Molokai Color Scheme - https://github.com/tomasr/molokai

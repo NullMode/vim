@@ -193,3 +193,7 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 :command Wq wq
 :command W w
 :command Q q
+
+" vim-markdown settings
+let g:vim_markdown_folding_disabled=1
+
