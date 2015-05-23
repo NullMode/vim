@@ -27,7 +27,7 @@ if [ -z $(which pip) ] ; then
 fi
 
 # Installing flake8 and isort
-pip install flake8 isort
+pip install flake8 isort jedi
 
 # Mirror git clone to folder
 echo '[*] Mirroring vim configuration from '"$DIR"' to '"$HOME"'/ ...'
