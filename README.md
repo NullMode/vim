@@ -13,6 +13,7 @@ folder as _vimrc). - NEEDS TESTING
 * git
 * pip
 * vim
+ * vim-nox (Debian users)
 * curl
 
 ## Installation Instructions
@@ -41,6 +42,7 @@ The update.sh file will update the project, plugins and color schemes in use (li
 * Vim Isort - https://github.com/fisadev/vim-isort
 * Ps1.vim - https://github.com/PProvost/vim-ps1
 * Vim Markdown - https://github.com/plasticboy/vim-markdown
+* Jedi-VIM - https://github.com/davidhalter/jedi-vim
 
 ## List of color schemes
 * Molokai Color Scheme - https://github.com/tomasr/molokai
