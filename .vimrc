@@ -197,3 +197,5 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 " vim-markdown settings
 let g:vim_markdown_folding_disabled=1
 
+" Sort out backspace on windows
+set backspace=indent,eol,start
