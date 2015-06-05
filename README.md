@@ -27,6 +27,10 @@ folder as _vimrc). - NEEDS TESTING
 * The install.sh file will sync the contents of the cloned project to the user's $HOME directory.
 * General configuration is kept in the .vimrc file
 
+## Installing on Windows
+
+There are two PowerShell scripts that can be used to update then install the configuration on windows. This has only been tested on my windows machine. Feedback and improvements welcome.
+
 ## Updating plugins
 The update.sh file will update the project, plugins and color schemes in use (listed below)
 
@@ -62,4 +66,3 @@ file :P
 # TODO
 + Full test on windows, linux and OSX
 + Get terminal version working in windows
-+ Windows deployment script
