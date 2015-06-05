@@ -1,6 +1,7 @@
 *.swp
 .git/
 install.sh
+install.ps1
 README.md
 rsync-exclude.txt
 TODO.txt
