@@ -44,6 +44,10 @@ The update.sh file will update the project, plugins and color schemes in use (li
 * Ps1.vim - https://github.com/PProvost/vim-ps1
 * Vim Markdown - https://github.com/plasticboy/vim-markdown
 * Jedi-VIM - https://github.com/davidhalter/jedi-vim
+* Vim JSON - https://github.com/elzr/vim-json
+* Vim Repeat - https://github.com/tpope/vim-repeat
+* Vim Surround - https://github.com/tpope/vim-surround
+* Vim Abolish - https://github.com/tpope/vim-abolish
 
 ## List of color schemes
 * Molokai Color Scheme - https://github.com/tomasr/molokai
