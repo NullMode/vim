@@ -71,8 +71,9 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " Color scheme - Leave your desired colorscheme uncommented :)
 colorscheme flatcolor
 
+
 " Set the darker dark backgound
-let g:flatcolor_asphaltbg=1
+let g:flatcolor_asphaltbg=0
 
 " Set background to dark
 set background=dark
@@ -176,6 +177,10 @@ command! -range=% Isort :<line1>,<line2>! isort -
 " Set font if in windows gvim, see link to font in README.md
 if has("gui_win32")
     set guifont=Droid_Sans_Mono:h12:cANSI
+else
+    " Change the settings for console niceness
+    highlight LineNr ctermfg=white ctermbg=black
+    let g:flatcolor_asphaltbg=0
 endif
 
 " Override file for overriding settings
