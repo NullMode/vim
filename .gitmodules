@@ -24,7 +24,7 @@
 	url = https://github.com/PProvost/vim-ps1.git
 [submodule ".vim/bundle/vim-isort"]
 	path = .vim/bundle/vim-isort
-	url = https://github.com/fisadev/vim-isort
+    url = https://github.com/fisadev/vim-isort.git
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
