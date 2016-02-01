@@ -165,9 +165,7 @@ endfunction
 :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
 " Load Isort
-if has("win32")
-    source C:\Program Files (x86)\Vim\vimfiles\bundle\vim-isort\ftplugin/python_vimisort.vim
-else
+if !has("win32")
     source ~/.vim/bundle/vim-isort/ftplugin/python_vimisort.vim
 endif
 
@@ -181,17 +179,6 @@ else
     " Change the settings for console niceness
     highlight LineNr ctermfg=white ctermbg=black
     let g:flatcolor_asphaltbg=0
-endif
-
-" Override file for overriding settings
-if has("win32")
-    if filereadable("_my_vim_rc")
-        so _my_vimrc
-    endif
-else
-    if filereadable(".my.vimrc")
-        so .my.vimrc
-    endif
 endif
 
 " If in html, two spaces for tabs only
@@ -208,3 +195,14 @@ let g:vim_markdown_folding_disabled=1
 
 " Sort out backspace on windows
 set backspace=indent,eol,start
+
+" Override file for overriding settings
+if has("win32")
+    if filereadable("_my_vim_rc")
+        so _my_vimrc
+    endif
+else
+    if filereadable(".my.vimrc")
+        so .my.vimrc
+    endif
+endif
