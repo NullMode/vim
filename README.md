@@ -31,6 +31,8 @@ folder as _vimrc). - NEEDS TESTING
 
 There are two PowerShell scripts that can be used to update then install the configuration on windows. This has only been tested on my windows machine. Feedback and improvements welcome.
 
+If you have problems with the isort plugin on windows, ensure that vim and python are running the same arcitecture (64 bit or 32 bit).
+
 ## Updating plugins
 The update.sh file will update the project, plugins and color schemes in use (listed below)
 
