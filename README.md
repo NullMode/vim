@@ -38,7 +38,6 @@ The update.sh file will update the project, plugins and color schemes in use (li
 
 ## List of installed plugins
 * Pathogen - https://github.com/tpope/vim-pathogen
-* NERDTree - https://github.com/scrooloose/nerdtree
 * Vim Flake8 - https://github.com/nvie/vim-flake8
 * Vim Git - https://github.com/tpope/vim-git
 * Vim Fugitive - https://github.com/tpope/vim-fugitive
@@ -54,6 +53,7 @@ The update.sh file will update the project, plugins and color schemes in use (li
 * Vim Repeat - https://github.com/tpope/vim-repeat
 * Vim Surround - https://github.com/tpope/vim-surround
 * Vim Abolish - https://github.com/tpope/vim-abolish
+* File Line - https://github.com/bogado/file-line
 
 ## List of color schemes
 * Molokai Color Scheme - https://github.com/tomasr/molokai
