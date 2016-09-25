@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/file-line"]
 	path = .vim/bundle/file-line
 	url = https://github.com/bogado/file-line.git
+[submodule ".vim/bundle/vim-projectionist"]
+	path = .vim/bundle/vim-projectionist
+	url = git://github.com/tpope/vim-projectionist.git
