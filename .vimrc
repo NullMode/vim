@@ -9,6 +9,9 @@ runtime! debian.vim
 " Bar marking 80 chars
 set colorcolumn=80
 
+" Disable auto line breaking
+set textwidth=0 wrapmargin=0
+
 " If syntax is available for file, use it
 if has("syntax")
   syntax on
