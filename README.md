@@ -13,16 +13,14 @@ folder as _vimrc). - NEEDS TESTING
 * git
 * pip
 * vim
- * vim-nox (Debian users)
 * curl
 
 ## Installation Instructions
 * Navigate to a suitable download folder and run:
 `git clone https://github.com/NullMode/vim.git`
-* Install the packages above: `apt-get install git python-pip vim vim-nox curl`
-* If you are not installing this as root you may need to install flake8 and
-  isort manually
-`sudo pip install flake8 isort`
+* Install the packages above: `apt-get install git python-pip vim curl`
+* If you are not installing this as root you may need to install flake8 manually
+`sudo pip install flake8`
 * Running update.sh will pull down the submodules code
 * The install.sh file will sync the contents of the cloned project to the user's $HOME directory.
 * General configuration is kept in the .vimrc file
@@ -30,8 +28,6 @@ folder as _vimrc). - NEEDS TESTING
 ## Installing on Windows
 
 There are two PowerShell scripts that can be used to update then install the configuration on windows. This has only been tested on my windows machine. Feedback and improvements welcome.
-
-If you have problems with the isort plugin on windows, ensure that vim and python are running the same arcitecture (64 bit or 32 bit).
 
 ## Updating plugins
 The update.sh file will update the project, plugins and color schemes in use (listed below)
@@ -45,7 +41,6 @@ The update.sh file will update the project, plugins and color schemes in use (li
 * Vim Gitgutter - https://github.com/airblade/vim-gitgutter
 * Vim Airline - https://github.com/bling/vim-airline
 * IndentLine - https://github.com/Yggdroot/indentLine
-* Vim Isort - https://github.com/fisadev/vim-isort
 * Ps1.vim - https://github.com/PProvost/vim-ps1
 * Vim Markdown - https://github.com/plasticboy/vim-markdown
 * Jedi-VIM - https://github.com/davidhalter/jedi-vim

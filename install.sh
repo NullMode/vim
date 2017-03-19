@@ -7,8 +7,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [ -z $(which vim) ] ; then
     echo '[*] install vim first before running this script!'
     echo '[*] apt-get install vim'
-    echo '[*] If Isort gives you errors because of no python run the following:'
-    echo '[*] apt-get install vim-nox'
     exit 1
 fi
 
@@ -26,8 +24,8 @@ if [ -z $(which pip) ] ; then
     exit 1
 fi
 
-# Installing flake8 and isort
-pip install flake8 isort jedi
+# Installing flake8
+pip install flake8 jedi
 
 # Mirror git clone to folder
 echo '[*] Mirroring vim configuration from '"$DIR"' to '"$HOME"'/ ...'
