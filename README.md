@@ -50,6 +50,7 @@ The update.sh file will update the project, plugins and color schemes in use (li
 * Vim Abolish - https://github.com/tpope/vim-abolish
 * File Line - https://github.com/bogado/file-line
 * Projectionist - https://github.com/tpope/vim-projectionist
+* vim-ansible-yaml - https://github.com/chase/vim-ansible-yaml
 
 ## List of color schemes
 * Molokai Color Scheme - https://github.com/tomasr/molokai
