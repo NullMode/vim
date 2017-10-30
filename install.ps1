@@ -9,7 +9,7 @@ function CopyFiles ($from, $to) {
 
 $install_dir = "C:\Program Files (x86)\Vim\"
 
-Remove-Item "$install_dir\vim74\colors\" -Force -Recurse
+Remove-Item "$install_dir\vim80\colors\" -Force -Recurse
 Remove-Item "$install_dir\vimfiles\bundle\" -Force -Recurse
 Remove-Item "$install_dir\vimfiles\autoload\" -Force -Recurse
 
