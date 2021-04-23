@@ -18,14 +18,14 @@ if [ -z $(which git) ] ; then
 fi
 
 # Check if pip is installed
-if [ -z $(which pip) ] ; then
+if [ -z $(which pip3) ] ; then
     echo '[*] install pip first before running this script!'
-    echo '[*] apt-get install python-pip'
+    echo '[*] apt-get install python3-pip'
     exit 1
 fi
 
 # Installing flake8
-pip install flake8 jedi
+pip3 install flake8 jedi
 
 # Mirror git clone to folder
 echo '[*] Mirroring vim configuration from '"$DIR"' to '"$HOME"'/ ...'
